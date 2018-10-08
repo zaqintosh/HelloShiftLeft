@@ -143,12 +143,12 @@ public class CustomerController {
      * @return
      * @throws IOException
      */
-      @RequestMapping(value = "/", method = RequestMethod.GET)
-      public String index(HttpServletResponse httpResponse, WebRequest request) throws IOException {
-	  	ClassPathResource cpr = new ClassPathResource("static/index.html");
-	  	String ret = "";
-		  try {
-			  byte[] bdata = FileCopyUtils.copyToByteArray(cpr.getInputStream());
+ @RequestMapping(value = "/", method = RequestMethod.GET)
+public String index(HttpServletResponse httpResponse, WebRequest request) throws IOException {
+ClassPathResource cpr = new ClassPathResource("static/index.html");
+String ret = "";
+try {
+byte[] bdata = FileCopyUtils.copyToByteArray(cpr.getInputStream());
 			  ret= new String(bdata, StandardCharsets.UTF_8);
 		  } catch (IOException e) {
 			  //LOG.warn("IOException", e);
