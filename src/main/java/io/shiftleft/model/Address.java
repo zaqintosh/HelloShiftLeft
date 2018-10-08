@@ -59,6 +59,7 @@ public class Address {
 
   public void setId(long id) {
     this.id = id;
+    // comment added
   }
 
   public void setAddress1(String address1) {
