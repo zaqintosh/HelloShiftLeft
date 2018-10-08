@@ -54,6 +54,7 @@ public class Account {
   }
 
   public String getType() {
+    // It returns type!
     return type;
   }
 
