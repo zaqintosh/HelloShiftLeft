@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 
 /**
- * Admin checks login
+ * Admin checks login....
  */
 @Controller
 public class AdminController {
